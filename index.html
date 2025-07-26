@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <h1>Calculator</h1>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <div class="display">
+            <div class="previous-operand" id="previous-operand"></div>
+            <div class="current-operand" id="current-operand">0</div>
+        </div>
+        
+        <div class="buttons">
+            <!-- Memory Functions -->
+            <button class="span-2 memory" data-action="memory-clear">MC</button>
+            <button class="memory" data-action="memory-recall">MR</button>
+            <button class="operator" data-action="memory-add">M+</button>
+            <button class="operator" data-action="memory-subtract">M-</button>
+            
+            <!-- Main Calculator Buttons -->
+            <button class="span-2" data-action="clear">C</button>
+            <button class="operator" data-action="delete">DEL</button>
+            <button class="operator" data-action="÷">÷</button>
+            
+            <button class="operator" data-action="√">√</button>
+            <button data-action="7">7</button>
+            <button data-action="8">8</button>
+            <button data-action="9">9</button>
+            <button class="operator" data-action="×">×</button>
+            
+            <button class="operator" data-action="%">%</button>
+            <button data-action="4">4</button>
+            <button data-action="5">5</button>
+            <button data-action="6">6</button>
+            <button class="operator" data-action="-">-</button>
+            
+            <button class="operator" data-action="x²">x²</button>
+            <button data-action="1">1</button>
+            <button data-action="2">2</button>
+            <button data-action="3">3</button>
+            <button class="operator" data-action="+">+</button>
+            
+            <button class="operator" data-action="+/-">+/-</button>
+            <button data-action="0">0</button>
+            <button data-action=".">.</button>
+            <button class="span-2 operator" data-action="=">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
